@@ -1,0 +1,24 @@
+<table class="table">
+<thead>
+    <tr>
+        {{#columns}}
+            <th>{{.}}</th>
+        {{/columns}}
+    </tr>
+</thead>
+<tbody>
+    {{#users}}
+    <tr>
+        <td>{{firstname}}</td>
+        <td>{{lastname}}</td>
+    </tr>
+    {{/users}}
+</tbody>
+</table>
+
+{{#isEven}}
+<p>No of Rows are even</p>
+{{/isEven}}
+{{^isEven}}
+<p>No of Rows are odd {{count}}</p>
+{{/isEven}}
